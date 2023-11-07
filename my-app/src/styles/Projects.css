@@ -1,0 +1,107 @@
+/* Common styles for both mobile and desktop */
+.project-img {
+  height: 300px; /* Fixed height */
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  object-fit: cover; /* Maintain image aspect ratio */
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20px; /* Adjust padding for both sides */
+  margin-bottom: 30px; /* Space between image and text */
+}
+
+.project {
+  flex: 0 1 calc(33.33% - 20px); /* Three columns with spacing */
+  margin: 5px;
+  text-align: center;
+  border-radius: 10px;
+  transform: scale(0.9); /* Decrease size to 90% by default */
+  transition: transform 0.3s;
+  background-color: black; /* Background color for text */
+}
+
+.project:hover {
+  cursor: pointer;
+  transform: scale(1);
+}
+
+/* Styles for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .project-container {
+    margin: 2px;
+  }
+
+  .project {
+    flex: 0 1 calc(50% - 20px); /* Two columns on smaller screens */
+  }
+}
+
+/* Styles for even smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .project {
+    flex: 0 1 calc(100% - 20px); /* Single column on even smaller screens */
+  }
+}
+
+
+.project-input-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  padding: 1px 1px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px; /* Adjust the maximum width as needed */
+}
+
+.project-search {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.search-icon {
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.project-a {
+  text-decoration: none;
+}
+.project-title:hover {
+  color: var(--secondaryColor);
+}
+
+.project-description:hover {
+  color: var(--secondaryColor);
+}
+
+.project-search::placeholder {
+  color: #ccc;
+}
+
+.project-search:focus::placeholder {
+  color: transparent;
+}
+
+.project-list {
+  margin: 50px;
+  border-radius: 10px;
+}

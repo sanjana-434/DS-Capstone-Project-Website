@@ -1,0 +1,98 @@
+/* Contact.css */
+* {
+  color: #ccc;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 100px;
+}
+
+.contact-image {
+  flex: 1;
+  padding: 20px;
+  display: block; /* Make sure the image is a block element */
+  max-width: 100%; /* Ensure it doesn't exceed its container */
+}
+
+.contact-form {
+  flex: 1;
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+button[type="submit"] {
+  background-color: rgb(182, 7, 182);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button[type="submit"]:hover{
+  background-color: rgb(211, 12, 211);
+
+}
+
+.contact-image-svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .contact-image {
+    display: none; /* Hide the image on small screens */
+  }
+
+  .contact-form {
+    flex: none; /* Remove flex on the form */
+    width: 100%; /* Make the form full-width on small screens */
+  }
+}
