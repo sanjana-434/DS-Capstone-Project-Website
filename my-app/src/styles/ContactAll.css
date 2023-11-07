@@ -3,7 +3,12 @@
 .contactAll-container p, h2, a {
     background-color: transparent;
   }
-  
+  .contactAll-container a{
+    text-decoration: none;
+    color: rgb(94, 3, 179);
+    cursor: pointer;
+
+  }  
   .contactAll-container {
     background-color: black;
     display: flex;
@@ -24,7 +29,6 @@
     border-radius: 8px;
     background-color: rgb(8, 7, 7);
     transition: transform 0.3s ease-in-out;
-    cursor: pointer;
     margin: 0 auto;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
     width: 100%; 
@@ -34,5 +38,13 @@
   .ContactAll:hover {
     transform: translateY(-5px); 
     background: url('https://img.freepik.com/premium-photo/purple-texture-high-quality_670382-120573.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699056000&semt=ais');
+    
+  }
+  .ContactAll:hover a{
+    color: black;
   }
    
+  .contactAll:hover a:hover{
+    text-decoration: none;
+    color: white;
+  }
