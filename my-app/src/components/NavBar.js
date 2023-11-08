@@ -16,9 +16,9 @@ function NavBar(){
       <h3>DS</h3>
       </span>
       <nav ref = {NavRef}>
-        <a href = '/Banner'>About</a>
-        <a href = '/ProjectList'>Projects</a>
-        <a href = '/contact'>Contact</a>
+        <a href = '/DS-Capstone-Project-Website/Banner'>About</a>
+        <a href = '/DS-Capstone-Project-Website/ProjectList'>Projects</a>
+        <a href = '/DS-Capstone-Project-Website/contact'>Contact</a>
         <button onClick={showNavBar} className='nav-btn nav-close-btn'>
           <FaTimes/>
         </button>
