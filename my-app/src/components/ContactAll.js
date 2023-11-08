@@ -182,7 +182,7 @@ const ContactAll = () => {
                 rollNumber: '21PD33',
                 name: 'SHARMILA J',
                 email: '21pd33@psgtech.ac.in',
-                linkedin: 'https://www.linkedin.com/in/johndoe'
+                linkedin: 'https://www.linkedin.com/in/sharmila-jayasankaran-5761a1236/'
               },
               {
                 rollNumber: '21PD34',
