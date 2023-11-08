@@ -2,6 +2,7 @@ import React from "react"
 import {useRef} from "react";
 import {FaBars,FaTimes} from "react-icons/fa";
 import '../styles/NavBar.css';
+import { Link } from 'react-router-dom';
 import logo from "../assets/img/logo2.png";
 
 function NavBar(){
@@ -16,9 +17,9 @@ function NavBar(){
       <h3>DS</h3>
       </span>
       <nav ref = {NavRef}>
-        <a href = '/DS-Capstone-Project-Website/Banner'>About</a>
-        <a href = '/DS-Capstone-Project-Website/ProjectList'>Projects</a>
-        <a href = '/DS-Capstone-Project-Website/contact'>Contact</a>
+        <Link to= '/DS-Capstone-Project-Website/Banner'>About</Link>
+        <Link to= '/DS-Capstone-Project-Website/ProjectList'>Projects</Link>
+        <Link to= '/DS-Capstone-Project-Website/contact'>Contact</Link>
         <button onClick={showNavBar} className='nav-btn nav-close-btn'>
           <FaTimes/>
         </button>
