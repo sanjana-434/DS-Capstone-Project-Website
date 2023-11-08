@@ -48,7 +48,7 @@ export const Banner = () =>{
                         <span className='tagline'>Welcome to our DataRush Revolve</span>
                         <h1>{"Hi! We are "}<span className='wrap'>{text}</span></h1>
                         <p>This website is a hub displaying various capstone projects by data science students. </p>
-                        <Link to="/ContactAll" className='contactAll-link'>
+                        <Link to="/DS-Capstone-Project-Website/ContactAll" className='contactAll-link'>
                         <button>
                             Let's Connect <FaArrowCircleRight size={25} />
                         </button>
