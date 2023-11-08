@@ -13,11 +13,11 @@ function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/DS-Capstone-Project-Website" element={<Banner />} />
-        <Route path="/DS-Capstone-Project-Website/Banner" element={<Banner />} />
-        <Route path="/DS-Capstone-Project-Website/ProjectList" element={<ProjectList />} />
-        <Route path="/DS-Capstone-Project-Website/Contact" element={<Contact />} />
-        <Route path="/DS-Capstone-Project-Website/ContactAll" element={<ContactAll />} />
+        <Route path="/" element={<Banner />} />
+        <Route path="/Banner" element={<Banner />} />
+        <Route path="/ProjectList" element={<ProjectList />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/ContactAll" element={<ContactAll />} />
       </Routes>
     </Router>
   );
